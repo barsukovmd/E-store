@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class DbTemplateExceptionHandler {
 
-    @AfterThrowing(pointcut = "execution(* by.tms.eshop.repository.*.*(..))", throwing = "ex")
+    @AfterThrowing(pointcut = "execution(* com.tms.estore.repository.*.*(..))", throwing = "ex")
     public void logDbException(Exception ex) {
         log.error("Unexpected error", ex);
     }

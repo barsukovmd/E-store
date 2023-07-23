@@ -23,13 +23,13 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="by.tms.eshop.aspect" level="WARN" additivity="false">
+            <Logger name="com.tms.estore.aspect" level="WARN" additivity="false">
             <AppenderRef ref="WARN_FILE"/>
         </Logger>
-        <Logger name="by.tms.eshop.exception" level="WARN" additivity="false">
+        <Logger name="com.tms.estore.exception" level="WARN" additivity="false">
             <AppenderRef ref="WARN_FILE"/>
         </Logger>
-        <Logger name="by.tms.eshop.interceptor" level="WARN" additivity="false">
+        <Logger name="com.tms.estore.interceptor" level="WARN" additivity="false">
             <AppenderRef ref="WARN_FILE"/>
         </Logger>
         <Root level="INFO">

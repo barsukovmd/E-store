@@ -18,7 +18,7 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public RoleDto getRole(String role) {
         Role userRole = roleRepository.findRoleByRole(role)
-                .orElseThrow(() -> new RuntimeException("Role not found"));
+                .orElseThrow(() -> new RuntimeException("Role is not found"));
         return roleMapper.convertToRoleDto(userRole);
     }
 }
